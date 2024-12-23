@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="bakkal.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="Stylesheets" runat="server">
+        <link rel="stylesheet" href="anaSayfa.css" type="text/css"/>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+        <form id="form1" runat="server">
+        <div class="headArkaplan">    
+        <div class="basliklar">
+            <%--<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/anaSayfa.aspx">YAZILIM BAKKALI</asp:HyperLink>--%>
+            <a href="anaSayfa.aspx">YAZILIM BAKKALI</a>
+             <div class="aramaBar">
+                <asp:TextBox ID="txtSearchMaster" runat="server" OnTextChanged="txtSearchMaster_TextChanged" class="aramaBar"></asp:TextBox>
+                <asp:Button ID="btnSearch" runat="server" Text="Ara" PostBackUrl="~/results.aspx" class="aramaButonu" OnClick="btnSearch_Click" />
+             </div>
+            <div class="uyelikButonlar"> 
+                <asp:Panel ID="Panel1" runat="server" Visible="True">
+                    <asp:Button ID="Button6" runat="server" Text="Admin" class="uyelikButonlar" />
+                </asp:Panel>
+                <asp:Panel ID="Panel2" runat="server" Visible="True">
+                    <asp:Button ID="Button7" runat="server" Text="Kullanıcı Hesabı" class="uyelikButonlar"  />
+                </asp:Panel>
+                <asp:Button ID="Button4" runat="server" Text="Giriş Yap" class="uyelikButonlar" />
+                <asp:Button ID="Button5" runat="server" Text="Üye Ol" class="uyelikButonlar" />
+            </div>
+        </div>
+        <div>
+                <asp:Button ID="Button1" runat="server" Text="Programlar"  class="butonlar" OnClick="Button1_Click" />
+                <asp:Button ID="Button2" runat="server" Text="Teklifler" class="butonlar" />
+                <asp:Button ID="Button3" runat="server" Text="Forum" class="butonlar" />
+        </div>
+    </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
