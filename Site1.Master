@@ -16,20 +16,23 @@
         <div class="headArkaplan">    
         <div class="basliklar">
             <%--<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/anaSayfa.aspx">YAZILIM BAKKALI</asp:HyperLink>--%>
-            <a href="anaSayfa.aspx">YAZILIM BAKKALI</a>
-             <div class="aramaBar">
-                <asp:TextBox ID="txtSearchMaster" runat="server" OnTextChanged="txtSearchMaster_TextChanged" class="aramaBar"></asp:TextBox>
-                <asp:Button ID="btnSearch" runat="server" Text="Ara" PostBackUrl="~/results.aspx" class="aramaButonu" OnClick="btnSearch_Click" />
+            <a href="index.aspx">YAZILIM BAKKALI</a>
+             <div class="search">
+                <asp:TextBox ID="txtSearchMaster" runat="server" OnTextChanged="txtSearchMaster_TextChanged" class="searchTerm"></asp:TextBox>
+                <asp:Button ID="btnSearch" runat="server" Text="Ara" PostBackUrl="~/results.aspx" class="searchButton" OnClick="btnSearch_Click" />
              </div>
             <div class="uyelikButonlar"> 
-                <asp:Panel ID="Panel1" runat="server" Visible="True">
-                    <asp:Button ID="Button6" runat="server" Text="Admin" class="uyelikButonlar" />
+                <asp:Panel ID="Panel1" runat="server" Visible="False">
+                    <asp:Button ID="Button6" runat="server" Text="Admin" class="uyelikButonlar" OnClick="Button6_Click" />
                 </asp:Panel>
-                <asp:Panel ID="Panel2" runat="server" Visible="True">
+                <asp:Panel ID="Panel2" runat="server" Visible="False">
                     <asp:Button ID="Button7" runat="server" Text="Kullanıcı Hesabı" class="uyelikButonlar"  />
                 </asp:Panel>
-                <asp:Button ID="Button4" runat="server" Text="Giriş Yap" class="uyelikButonlar" />
-                <asp:Button ID="Button5" runat="server" Text="Üye Ol" class="uyelikButonlar" />
+                <asp:Panel ID="Panel3" runat="server">
+                                    <asp:Button ID="Button4" runat="server" Text="Giriş Yap" class="uyelikButonlar" OnClick="Button4_Click" />
+                    <asp:Button ID="Button5" runat="server" Text="Üye Ol" class="uyelikButonlar" />
+                </asp:Panel>
+
             </div>
         </div>
         <div>
@@ -43,6 +46,41 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-    </form>
+
+    <footer>
+        <div class="flexbox">
+            <div class="inline">
+	<div class="inline">
+		<h5 class="widgetheading">Pages</h5>
+		<ul class="link-list">
+			<li><a href="#">Press release</a></li>
+			<li><a href="#">Terms and conditions</a></li>
+			<li><a href="#">Privacy policy</a></li>
+			<li><a href="#">Career center</a></li>
+			<li><a href="#">Contact us</a></li>
+		</ul>
+	</div>
+</div>
+<div class="inline">
+	<div class="">
+		<h5 class="widgetheading">Latest posts</h5>
+		<ul class="link-list">
+			<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+			<li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
+			<li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
+		</ul>
+	</div>
+</div>
+        <div class="inline">
+                  <ul>
+                     <li>test</li>
+                     <li>test</li>
+                     <li>test</li>
+                     <li>test</li>
+                 </ul>
+            </div>
+        </div>
+    </footer>
+</form>
 </body>
 </html>

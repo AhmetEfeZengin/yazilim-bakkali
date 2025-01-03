@@ -50,12 +50,140 @@ a {
     color: antiquewhite;
     text-decoration: none;
 }
-.flexbox{
-    display:flex;
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.flexend {
+    display: flex;
+    justify-content: flex-end;
+}
+.inline {
+    display:inline-block;
 }
 .aramaBar{
     display: flex;
     margin-left: auto;
 }
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #191919;
+    color: white;
+    text-align: center;
+}
+p {
+    display:inline;
+    margin:5px;
+    font-family:Now;
+}
+.girisArayuz{
+    vertical-align:central;
+    margin-left:auto;
+}
+
+
 
 /*bundan sonra arama kodu kopyala yapıştırdım*/
+
+.search {
+    margin-left:auto;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    margin-left:auto;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+    .searchTerm:focus {
+        color: #00B4CC;
+    }
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+    .image-container:hover {
+        transform: scale(1.05);
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        transition: opacity 0.3s ease;
+    }
+
+    .image-container:hover img {
+        opacity: 0.9;
+    }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px;
+    padding-top: 20px; /* Adjust for distance from the top */
+}
+
+.centered-text {
+    text-align: center;
+}
+
+a.kategoriLink{
+    font-size:large;
+    color:black!important;
+}
+
+a.kategoriLink:hover  {
+    font-size: large;
+    color: #00B4CC!important;
+}
