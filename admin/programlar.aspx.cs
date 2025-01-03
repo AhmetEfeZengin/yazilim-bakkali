@@ -11,7 +11,12 @@ namespace bakkal.admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string kullanici = "";
+            if (Session["kullanici"] != null)
+            {
+                kullanici = Session["kullanici"].ToString();
+                Label1.Text = kullanici;
+            }
         }
     }
 }

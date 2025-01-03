@@ -5,9 +5,11 @@
     <link rel="stylesheet" href="anaSayfa.css" type="text/css"/>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+            <h3 class="centered-text">Kodunuzu Paylaşın, Yeniliğe İlham Verin</h3>
     <div class="container">
+
         <p class="centered-text">
-            Kodunuzu Paylaşın, Yeniliğe İlham Verin
+
 Programcıların ve geliştiricilerin projelerini, kod parçacıklarını ve programlarını dünyayla paylaşmak için bir araya geldiği platform olan Yazılım Bakkalı'na hoş geldiniz. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, topluluğumuz becerilerinizi sergilemenize, başkalarıyla iş birliği yapmanıza ve en iyilerden öğrenmenize yardımcı olmak için tasarlanmıştır. Kodunuzu yükleyin, yeni projeler keşfedin ve teknolojinin sınırlarını zorlayan yaratıcı problem çözücülerden oluşan büyüyen bir ağın parçası olun.
 
 Bugün çalışmanızı paylaşmaya başlayın ve geliştirici topluluğunda etki yaratın!

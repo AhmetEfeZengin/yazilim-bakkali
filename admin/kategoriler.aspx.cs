@@ -6,15 +6,22 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Configuration;
 
 namespace bakkal.admin
 {
     public partial class kategoriler : System.Web.UI.Page
     {
-        SqlConnection baglan = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ahmet\source\repos\bakkal\App_Data\KULLANICILAR.mdf;Integrated Security=True");
+        SqlConnection baglan = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ToString()); 
         protected void Page_Load(object sender, EventArgs e)
         {
             fillgridview();
+            string kullanici = "";
+            if (Session["kullanici"] != null)
+            {
+                kullanici = Session["kullanici"].ToString();
+                Label1.Text = kullanici;
+            }
         }
         public void fillgridview()
         {
@@ -48,6 +55,26 @@ namespace bakkal.admin
             fillgridview();
 
 
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            if (txt_kategori.Text == "")
+            {
+                lbl_hata.Text = "Lütfen kategori adını giriniz";
+                lbl_hata.Visible = true;
+                txt_kategori.Focus();
+                return;
+            }
+            SqlCommand sil = new SqlCommand(@"DELETE FROM kategoriler WHERE kategori_adi = @kategori_adi", baglan);
+            sil.Parameters.AddWithValue("@kategori_adi", txt_kategori.Text);
+            baglan.Open();
+            sil.ExecuteNonQuery();
+            baglan.Close();
+            string messageimage = "Kategori başarıyla silinmiştir.";
+            string scriptimage = "<script type=\"text/javascript\">alert('" + messageimage + "');</script>";
+            ClientScript.RegisterStartupScript(this.GetType(), "alert", scriptimage);
+            fillgridview();
         }
     }
 }

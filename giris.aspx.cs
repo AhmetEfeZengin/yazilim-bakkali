@@ -7,13 +7,14 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
 using System.Reflection.Emit;
+using System.Configuration;
 
 namespace bakkal
 {
     
     public partial class WebForm3 : System.Web.UI.Page
     {
-        SqlConnection baglan = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ahmet\source\repos\bakkal\App_Data\KULLANICILAR.mdf;Integrated Security=True");
+        SqlConnection baglan = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ToString());
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -26,8 +27,8 @@ namespace bakkal
             string yetki = "";
             string kullanici = "";
             int id = 0;
-            komut.Parameters.AddWithValue("@ad", SqlDbType.NVarChar).Value = TextBox1.Text;
-            komut.Parameters.AddWithValue("@psswd", SqlDbType.NVarChar).Value = TextBox2.Text;
+            komut.Parameters.AddWithValue("@ad", SqlDbType.NVarChar).Value = txt_kAdi.Text;
+            komut.Parameters.AddWithValue("@psswd", SqlDbType.NVarChar).Value = txt_sifre.Text;
             baglan.Open();
             SqlDataReader read = komut.ExecuteReader();
             while (read.Read())
@@ -45,7 +46,7 @@ namespace bakkal
                 Session.Add("kullanici", kullanici); // kıllanıcı adını tuttuğumuz session
                 Session.Add("yetkisi", yetki);       // yetkinin tutulduğu session
                 Session.Add("ID", id);
-                Session.Timeout = 1;
+                Session.Timeout = 5;
             }
 
             baglan.Close();

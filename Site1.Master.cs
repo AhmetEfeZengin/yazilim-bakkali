@@ -57,5 +57,21 @@ namespace bakkal
         {
             Response.Redirect("giris.aspx");
         }
+
+        protected void Button7_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("kullaniciProfil.aspx");
+        }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("uyeOl.aspx");
+        }
+
+        protected void Button8_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("index.aspx");
+        }
     }
 }

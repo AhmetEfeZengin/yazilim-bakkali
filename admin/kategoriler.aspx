@@ -30,103 +30,54 @@
         <div class="container-scroller">
   <!-- partial:partials/_sidebar.html -->
   <nav class="sidebar sidebar-offcanvas" id="sidebar">
-    <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-      <a class="sidebar-brand brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="logo" /></a>
-      <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
-    </div>
-    <ul class="nav">
-      <li class="nav-item profile">
-        <div class="profile-desc">
-          <div class="profile-pic">
-            <div class="count-indicator">
-              <img class="img-xs rounded-circle " src="assets/images/faces/face15.jpg" alt="">
-              <span class="count bg-success"></span>
-            </div>
-            <div class="profile-name">
-              <h5 class="mb-0 font-weight-normal">Henry Klein</h5>
-              <span>Gold Member</span>
-            </div>
-          </div>
-          <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
-          <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
-            <a href="#" class="dropdown-item preview-item">
-              <div class="preview-thumbnail">
-                <div class="preview-icon bg-dark rounded-circle">
-                  <i class="mdi mdi-settings text-primary"></i>
-                </div>
-              </div>
-              <div class="preview-item-content">
-                <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
-              </div>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item preview-item">
-              <div class="preview-thumbnail">
-                <div class="preview-icon bg-dark rounded-circle">
-                  <i class="mdi mdi-onepassword  text-info"></i>
-                </div>
-              </div>
-              <div class="preview-item-content">
-                <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
-              </div>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item preview-item">
-              <div class="preview-thumbnail">
-                <div class="preview-icon bg-dark rounded-circle">
-                  <i class="mdi mdi-calendar-today text-success"></i>
-                </div>
-              </div>
-              <div class="preview-item-content">
-                <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item nav-category">
-        <span class="nav-link">Navigation</span>
-      </li>
-      <li class="nav-item menu-items">
-        <a class="nav-link" href="index.html">
-          <span class="menu-icon">
-            <i class="mdi mdi-speedometer"></i>
-          </span>
-          <span class="menu-title">Dashboard</span>
-        </a>
-      </li>
-      <li class="nav-item menu-items">
-        <a class="nav-link" href="uyeler.aspx">
-          <span class="menu-icon">
-            <i class="mdi mdi-table-large"></i>
-          </span>
-          <span class="menu-title">Üyeler</span>
-        </a>
-      </li>
-      <li class="nav-item menu-items">
-        <a class="nav-link" href="kategoriler.aspx">
-          <span class="menu-icon">
-            <i class="mdi mdi-chart-bar"></i>
-          </span>
-          <span class="menu-title">Kategoriler</span>
-        </a>
-      </li>
-      <li class="nav-item menu-items">
-        <a class="nav-link" href="programlar.aspx">
-          <span class="menu-icon">
-            <i class="mdi mdi-contacts"></i>
-          </span>
-          <span class="menu-title">Programlar</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
+  <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+    <a class="sidebar-brand brand-logo" href="admin.aspx"><img src="assets/images/logo.svg" alt="logo" /></a>
+    <a class="sidebar-brand brand-logo-mini" href="admin.aspx"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+  </div>
+  <ul class="nav">
+    <li class="nav-item nav-category">
+      <span class="nav-link">Navigation</span>
+    </li>
+    <li class="nav-item menu-items">
+      <a class="nav-link" href="admin.aspx">
+        <span class="menu-icon">
+          <i class="mdi mdi-speedometer"></i>
+        </span>
+        <span class="menu-title">Dashboard</span>
+      </a>
+    </li>
+    <li class="nav-item menu-items">
+      <a class="nav-link" href="uyeler.aspx">
+        <span class="menu-icon">
+          <i class="mdi mdi-table-large"></i>
+        </span>
+        <span class="menu-title">Üyeler</span>
+      </a>
+    </li>
+    <li class="nav-item menu-items">
+      <a class="nav-link" href="kategoriler.aspx">
+        <span class="menu-icon">
+          <i class="mdi mdi-chart-bar"></i>
+        </span>
+        <span class="menu-title">Kategoriler</span>
+      </a>
+    </li>
+    <li class="nav-item menu-items">
+      <a class="nav-link" href="programlar.aspx">
+        <span class="menu-icon">
+          <i class="mdi mdi-contacts"></i>
+        </span>
+        <span class="menu-title">Programlar</span>
+      </a>
+    </li>
+  </ul>
+</nav>
   <!-- partial -->
   <div class="container-fluid page-body-wrapper">
     <!-- partial:partials/_navbar.html -->
-    <nav class="navbar p-0 fixed-top d-flex flex-row">
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
       <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini" href="admin.aspx"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
       </div>
       <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -277,8 +228,8 @@
           <li class="nav-item dropdown">
             <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
               <div class="navbar-profile">
-                <img class="img-xs rounded-circle" src="assets/images/faces/face15.jpg" alt="">
-                <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+                &nbsp;<p class="mb-0 d-none d-sm-block navbar-profile-name">
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></p>
                 <i class="mdi mdi-menu-down d-none d-sm-block"></i>
               </div>
             </a>
@@ -291,9 +242,6 @@
                     <i class="mdi mdi-settings text-success"></i>
                   </div>
                 </div>
-                <div class="preview-item-content">
-                  <p class="preview-subject mb-1">Settings</p>
-                </div>
               </a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item preview-item">
@@ -303,7 +251,8 @@
                   </div>
                 </div>
                 <div class="preview-item-content">
-                  <p class="preview-subject mb-1">Log out</p>
+<%--                  <p class="preview-subject mb-1"></p>--%>
+                <asp:Button ID="Button2" runat="server" Text="Çıkış yap"/>
                 </div>
               </a>
               <div class="dropdown-divider"></div>
@@ -319,68 +268,76 @@
     <!-- partial -->
     <div class="main-panel">
       <div class="content-wrapper">
-                                <table cellpadding="0" cellspacing="0" style="width: 900px">
-        <tr style="width:450"><td style="width: 450px" valign="top" >
-    <table cellpadding="0" cellspacing="0" style="width: 450px">
-        <tr><td colspan="2" height="30" class="admin_form_baslik">&nbsp;Kategori Kayıt Formu</td></tr>       
-         <tr>
-            <td style="width:150px; height:30px;" class="admin_form_left">&nbsp;Kategori Adı</td>
-            <td style="width:300px; height:30px;"><asp:TextBox ID="txt_kategori" runat="server" Width="200px" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" Height="22px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-        </tr>
-        <tr>
-            <td style="width: 150px" class="admin_form_left">&nbsp;</td>
-            <td style="width:300px; height:30px;">&nbsp;</td>
-        </tr>
-        <tr>
-            <td align="left" style="width: 150px"><asp:Label ID="lbl_hata" runat="server" Font-Names="Verdana" Font-Size="X-Small" ForeColor="#C00000" Visible="False"></asp:Label>
-            </td>
-            <td style="width:300px; height:30px;">
-                <asp:Button ID="Button1" runat="server" Text="KAYDET" Width="95px" 
-                    onclick="Button1_Click" Font-Bold="True" ForeColor="#990000" />
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 150px"></td>
-            <td style="width:300px; height:30px;"></td>
-        </tr>
-        </table>
-    
-            </td>
-            <td valign="top" style="width: 450px">
-    <table cellpadding="0" cellspacing="0" style="width: 450px">
-        <tr><td height="30" class="admin_form_baslik">Kategoriler</td></tr>       
-        <tr>
-            <td style="height:30px;" align="left" valign="top">
-                <asp:GridView ID="GridView1" runat="server" 
-        AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" 
-        BorderStyle="Solid" BorderWidth="1px" CellPadding="5" DataKeyNames="id"  PageSize="20" Width="380px">
-        <FooterStyle BackColor="White" ForeColor="#000066" />
-        <RowStyle Font-Names="Verdana" Font-Size="11px" ForeColor="#000066" 
-            Height="25px" />
-        <Columns>
-            <asp:BoundField DataField="id" SortExpression="id" Visible="False" />
-            <asp:BoundField DataField="kategori_adi" HeaderText="Kategori"></asp:BoundField>
-        </Columns>
-        <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
-        <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
-        <HeaderStyle BackColor="#006699" Font-Bold="True" Font-Names="Verdana" 
-            Font-Size="12px" ForeColor="White" Height="30px" />
-    </asp:GridView></td>
-        </tr>
-        </table>
-    
-            </td>
-        </tr>
-        <tr style="width:400px" >
-            <td style="width: 380px">
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-    </table>
+             <table cellpadding="0" cellspacing="0" style="width: 900px">
+                <tr style="width: 450">
+                    <td style="width: 450px" valign="top">
+                        <table cellpadding="0" cellspacing="0" style="width: 450px">
+                            <tr>
+                                <td colspan="2" height="30" class="admin_form_baslik">&nbsp;Kategori Kayıt Formu</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 150px; height: 30px;" class="admin_form_left">&nbsp;Kategori Adı</td>
+                                <td style="width: 300px; height: 30px;">
+                                    <asp:TextBox ID="txt_kategori" runat="server" Width="200px" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" Height="22px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                            <tr>
+                                <td style="width: 150px" class="admin_form_left">&nbsp;</td>
+                                <td style="width: 300px; height: 30px;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td align="left" style="width: 150px">
+                                    <asp:Label ID="lbl_hata" runat="server" Font-Names="Verdana" Font-Size="X-Small" ForeColor="#C00000" Visible="False"></asp:Label>
+                                </td>
+                                <td style="width: 300px; height: 30px;">
+                                    <asp:Button ID="Button1" runat="server" Text="KAYDET" Width="95px"
+                                        OnClick="Button1_Click" Font-Bold="True" ForeColor="#990000" />
+                                                    <asp:Button ID="Button3" runat="server" Text="SİL" Width="95px" 
+                    onclick="Button3_Click" Font-Bold="True" ForeColor="#990000" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 150px"></td>
+                                <td style="width: 300px; height: 30px;"></td>
+                            </tr>
+                        </table>
+
+                    </td>
+                    <td valign="top" style="width: 450px">
+                        <table cellpadding="0" cellspacing="0" style="width: 450px">
+                            <tr>
+                                <td height="30" class="admin_form_baslik">Kategoriler</td>
+                            </tr>
+                            <tr>
+                                <td style="height: 30px;" align="left" valign="top">
+                                    <asp:GridView ID="GridView1" runat="server"
+                                        AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC"
+                                        BorderStyle="Solid" BorderWidth="1px" CellPadding="5" DataKeyNames="id" PageSize="20" Width="380px">
+                                        <FooterStyle BackColor="White" ForeColor="#000066" />
+                                        <RowStyle Font-Names="Verdana" Font-Size="11px" ForeColor="#000066"
+                                            Height="25px" />
+                                        <Columns>
+                                            <asp:BoundField DataField="id" SortExpression="id" Visible="False" />
+                                            <asp:BoundField DataField="kategori_adi" HeaderText="Kategori"></asp:BoundField>
+                                        </Columns>
+                                        <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
+                                        <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
+                                        <HeaderStyle BackColor="#006699" Font-Bold="True" Font-Names="Verdana"
+                                            Font-Size="12px" ForeColor="White" Height="30px" />
+                                    </asp:GridView>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+                <tr style="width: 400px">
+                    <td style="width: 380px">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
       </div>
       <!-- content-wrapper ends -->
       <!-- partial:partials/_footer.html -->

@@ -8,79 +8,85 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <asp:ContentPlaceHolder ID="Stylesheets" runat="server">
-        <link rel="stylesheet" href="anaSayfa.css" type="text/css"/>
+        <link rel="stylesheet" href="anaSayfa.css" type="text/css" />
     </asp:ContentPlaceHolder>
 </head>
 <body>
-        <form id="form1" runat="server">
-        <div class="headArkaplan">    
-        <div class="basliklar">
-            <%--<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/anaSayfa.aspx">YAZILIM BAKKALI</asp:HyperLink>--%>
-            <a href="index.aspx">YAZILIM BAKKALI</a>
-             <div class="search">
-                <asp:TextBox ID="txtSearchMaster" runat="server" OnTextChanged="txtSearchMaster_TextChanged" class="searchTerm"></asp:TextBox>
-                <asp:Button ID="btnSearch" runat="server" Text="Ara" PostBackUrl="~/results.aspx" class="searchButton" OnClick="btnSearch_Click" />
-             </div>
-            <div class="uyelikButonlar"> 
-                <asp:Panel ID="Panel1" runat="server" Visible="False">
-                    <asp:Button ID="Button6" runat="server" Text="Admin" class="uyelikButonlar" OnClick="Button6_Click" />
-                </asp:Panel>
-                <asp:Panel ID="Panel2" runat="server" Visible="False">
-                    <asp:Button ID="Button7" runat="server" Text="Kullanıcı Hesabı" class="uyelikButonlar"  />
-                </asp:Panel>
-                <asp:Panel ID="Panel3" runat="server">
-                                    <asp:Button ID="Button4" runat="server" Text="Giriş Yap" class="uyelikButonlar" OnClick="Button4_Click" />
-                    <asp:Button ID="Button5" runat="server" Text="Üye Ol" class="uyelikButonlar" />
-                </asp:Panel>
+    <form id="form1" runat="server">
+        <div class="headArkaplan">
+            <div class="basliklar">
+                <%--<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/anaSayfa.aspx">YAZILIM BAKKALI</asp:HyperLink>--%>
+                <a href="index.aspx">YAZILIM BAKKALI</a>
+                <div class="search">
+                    <asp:TextBox ID="txtSearchMaster" runat="server" OnTextChanged="txtSearchMaster_TextChanged" class="searchTerm"></asp:TextBox>
+                    <asp:Button ID="btnSearch" runat="server" Text="Ara" PostBackUrl="Programlar.aspx" class="searchButton" OnClick="btnSearch_Click" />
+                </div>
+                <div class="uyelikButonlar">
+                    <asp:Panel ID="Panel1" runat="server" Visible="False">
+                        <asp:Button ID="Button6" runat="server" Text="Admin" class="uyelikButonlar" OnClick="Button6_Click" />
+                    </asp:Panel>
+                    <asp:Panel ID="Panel2" runat="server" Visible="False">
+                        <asp:Button ID="Button7" runat="server" Text="Kullanıcı Hesabı" class="uyelikButonlar" OnClick="Button7_Click" />
+                        <asp:Button ID="Button8" runat="server" Text="Çıkış" class="uyelikButonlar" OnClick="Button8_Click" />
+                    </asp:Panel>
+                    <asp:Panel ID="Panel3" runat="server">
+                        <asp:Button ID="Button4" runat="server" Text="Giriş Yap" class="uyelikButonlar" OnClick="Button4_Click" />
+                        <asp:Button ID="Button5" runat="server" Text="Üye Ol" class="uyelikButonlar" OnClick="Button5_Click" />
+                    </asp:Panel>
 
+                </div>
             </div>
-        </div>
-        <div>
-                <asp:Button ID="Button1" runat="server" Text="Programlar"  class="butonlar" OnClick="Button1_Click" />
+            <div>
+                <asp:Button ID="Button1" runat="server" Text="Programlar" class="butonlar" OnClick="Button1_Click" />
                 <asp:Button ID="Button2" runat="server" Text="Teklifler" class="butonlar" />
                 <asp:Button ID="Button3" runat="server" Text="Forum" class="butonlar" />
+            </div>
         </div>
-    </div>
 
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
 
-    <footer>
-        <div class="flexbox">
-            <div class="inline">
-	<div class="inline">
-		<h5 class="widgetheading">Pages</h5>
-		<ul class="link-list">
-			<li><a href="#">Press release</a></li>
-			<li><a href="#">Terms and conditions</a></li>
-			<li><a href="#">Privacy policy</a></li>
-			<li><a href="#">Career center</a></li>
-			<li><a href="#">Contact us</a></li>
-		</ul>
-	</div>
-</div>
-<div class="inline">
-	<div class="">
-		<h5 class="widgetheading">Latest posts</h5>
-		<ul class="link-list">
-			<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-			<li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-			<li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-		</ul>
-	</div>
-</div>
-        <div class="inline">
-                  <ul>
-                     <li>test</li>
-                     <li>test</li>
-                     <li>test</li>
-                     <li>test</li>
-                 </ul>
+        <footer>
+            <div class="flexbox">
+                <div class="inline">
+                    <div class="inline">
+                        <h5 class="widgetheading">Pages</h5>
+                        <ul class="link-list">
+                            <li><a href="#">Terms and conditions</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Career center</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inline">
+                    <div class="">
+                        <h5 class="widgetheading">Bilgiler</h5>
+                        <ul class="link-list">
+                            <li>
+                                <p>ahmetzengin@hacettepe.edu.tr</p>
+                            </li>
+                            <li>
+                                <p>5306891559</p>
+                            </li>
+                            <li>
+                                <p>© 2025</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inline">
+                 <%--   <ul>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                    </ul>--%>
+                </div>
             </div>
-        </div>
-    </footer>
-</form>
+        </footer>
+    </form>
 </body>
 </html>

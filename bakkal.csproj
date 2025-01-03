@@ -76,12 +76,15 @@
     <Content Include="App_Data\KULLANICILAR_log.ldf">
       <DependentUpon>KULLANICILAR.mdf</DependentUpon>
     </Content>
-    <Content Include="CjhukO4i_400x400.jpg" />
+    <Content Include="images\program.jpg" />
+    <Content Include="images\soggy.jpg" />
     <Content Include="images\1722935310961.jpeg" />
     <Content Include="images\java-code.jpeg.jpeg" />
     <Content Include="images\java-coding-best-practices.jpg" />
     <Content Include="images\java-programming-what-is-it_1.jpeg" />
+    <Content Include="images\user.jpg" />
     <Content Include="index.aspx" />
+    <Content Include="kullaniciProfil.aspx" />
     <Content Include="moderna\blog.html" />
     <Content Include="moderna\components.html" />
     <Content Include="moderna\contact.html" />
@@ -11034,11 +11037,12 @@
     <Content Include="admin\partials\_footer.html" />
     <Content Include="admin\partials\_navbar.html" />
     <Content Include="admin\partials\_sidebar.html" />
+    <Content Include="uyeOl.aspx" />
     <Content Include="Web.config" />
     <Content Include="Programlar.aspx" />
     <Content Include="giris.aspx" />
     <Content Include="admin\admin.aspx" />
-    <Content Include="kullaniciSayfa.aspx" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="admin\kategoriKayit.aspx.cs">
@@ -11076,6 +11080,13 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="kullaniciProfil.aspx.cs">
+      <DependentUpon>kullaniciProfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullaniciProfil.aspx.designer.cs">
+      <DependentUpon>kullaniciProfil.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
@@ -11106,12 +11117,19 @@
     <Compile Include="admin\admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="kullaniciSayfa.aspx.cs">
-      <DependentUpon>kullaniciSayfa.aspx</DependentUpon>
+    <Compile Include="uyeOl.aspx.cs">
+      <DependentUpon>uyeOl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="kullaniciSayfa.aspx.designer.cs">
-      <DependentUpon>kullaniciSayfa.aspx</DependentUpon>
+    <Compile Include="uyeOl.aspx.designer.cs">
+      <DependentUpon>uyeOl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
